@@ -50,6 +50,8 @@ module "load_balancer" {
 
   ec2_target_group   = module.compute.ec2_target_group
 
+  public_sg_id       = module.security_groups.public_sg_id
+
 }
 
 module "s3" {
