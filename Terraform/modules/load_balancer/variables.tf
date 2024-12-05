@@ -13,3 +13,6 @@ variable "asg_target_group" {
 variable "ec2_target_group" {
  type = string
 }
+variable "public_sg_id" {
+ type = string
+}
